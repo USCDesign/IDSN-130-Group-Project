@@ -21,16 +21,17 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     color: #555;
     font-weight: 700;
-    line-height: 40px;
+    font-weight: 700;
+    line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 8px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nixie One', 'Montserrat', sans-serif;
     font-size: 30px;
     color: #555;
     font-weight: 200;
@@ -80,7 +81,7 @@ h6 {
 }
 
 p, li {
-    font-family: 'PT Serif', serif;
+    font-family: 'Raleway', 'Helvetica', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: normal;
@@ -375,19 +376,21 @@ footer {
 }
 
 #usc-homepage {
-  width: 48%;
+  width: 42.5%;
   float: left;
-  border: 1px solid black;
+  border: solid 2px #dfdfdf;
   text-align: center;
   height: auto;
+    padding: 2.5%;
 }
 
 #ucla-homepage {
-  width: 48%;
+  width: 42.5%;
   float: right;
-  border: 1px solid black;
+  border: solid 2px #dfdfdf;
   text-align: center;
   height: auto;
+    padding: 2.5%;
 }
 
 .navbar {
@@ -400,9 +403,31 @@ footer {
     z-index: 10;
 }
 
+#one {
+    color:#FFFFFA;
+    width: 100%;
+}
+
+#one h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+
+
+
+.logo {
+    height: 80px;
+    margin-bottom: 2.5%;
+}
+
+.pick {
+    margin-top: 2.5%;
+}
+
 /* Links inside the navbar */
 .navbar a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nixie One', 'Montserrat', sans-serif;
     font-size: 16px;
     color: #f2f2f2;
     font-weight: 200;
