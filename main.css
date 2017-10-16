@@ -132,10 +132,15 @@ code {
 }
 
 a {
-    border-bottom: dotted 1px;
+    /* border-bottom: dotted 1px; */
     text-decoration: none;
     color: inherit;
 }
+
+.hyperlink {
+	border-bottom: dotted 1px; 
+}
+
 
 a:hover {
     color: #990000;
@@ -189,6 +194,10 @@ ul.alt li{
 
 ul.alt li:first-child {
     border-top: none;
+}
+
+#textnumbers {
+	letter-spacing: 2px;
 }
 
 
@@ -427,7 +436,8 @@ footer {
 
 /* Links inside the navbar */
 .navbar a {
-    font-family: 'Nixie One', 'Montserrat', sans-serif;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+	font-weight: 400;
     font-size: 16px;
     color: #f2f2f2;
     font-weight: 200;
@@ -460,3 +470,292 @@ footer {
   opacity: 0.5;
   z-index: 0;
 }
+
+/* RIVARLY TIMELINE PAGE */
+#rivalryheader {
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/top-1600.svg), url("images/overlay.png"), url(images/oldticket.jpg);
+	background-position:  bottom center, top left, top center;
+	background-repeat: no-repeat, repeat, no-repeat;
+	position: relative;
+	height: 95%;
+	width: 100%;
+	background-size: 2000px 287.5px, auto, cover;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#two:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: 630%;
+	left: calc(50% - 1px);
+	position: absolute;
+	top: 0;
+	width: 2px;
+	z-index: -1;
+}
+
+#two h1, #three h1, #four h1 {
+	text-align: center;
+	font-size: 32px;
+}
+            
+.majorheader {
+	position: relative;
+	background: #FFFFFA;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 6em;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-bottom-width: 2px;
+	border-top-width: 2px;
+	padding: 3em 0 3em 0;
+	text-align: center;
+	display: block;
+}
+
+.majorheader p {
+	padding: 0 10%;
+}
+            
+.majorheader:before {
+	top: 10px;
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.majorheader:after {
+	bottom: 10px;
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.videoheader {
+	position: relative;
+	background: #FFFFFA;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.videoheader iframe {
+	width: 100%;
+	height: 56.25%;
+}
+         
+.rivalrycontent {
+	margin-bottom: 3em;
+}
+			
+#timeline:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: 100%;
+	margin-left:  left: 50%;
+	position: relative;
+	top: 0;
+	width: 1px;
+	z-index: -1;
+}
+			
+#timeline {
+	position: relative;
+	width: 80%;
+	margin-top: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: auto;
+	align-content: center;				
+}
+			
+.timeline, .schooltimeline {
+	padding: 0;
+	margin: 0;
+	width: 50%;
+}
+
+.schooltimeline {
+	text-align: center;
+	padding: 2em 3em;
+	vertical-align: top;
+}
+
+.schooltimeline h3 {
+	padding-bottom: 0.35em;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+            
+#timeline td img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+#timeline th {
+	padding: 0 3em 2em 3em;
+	border-bottom: solid 1px #dfdfdf;
+}
+
+.timelineaudio {
+	padding: 2em 0;
+	text-align: center;
+	border-bottom: solid 1px #dfdfdf;
+}
+
+.timelineaudio h4 {
+	padding-bottom: 0.75em;
+}
+	
+
+
+.historyleft {
+	max-width: inherit;
+	text-align: left;
+	padding: 5%;
+}
+			
+.historyright {
+	text-align: right;
+	padding: 5%;
+} 
+		
+#three:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: 285%;
+	left: calc(50% - 1px);
+	position: absolute;
+	top: 0;
+	width: 2px;
+	z-index: -1;
+}
+
+#historyheader {
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/top-1600.svg), url("images/overlay.png"), url(images/LA_HistoriesBackground.jpg);
+	background-position:  bottom center, top left, top center;
+	background-repeat: no-repeat, repeat, no-repeat;
+	position: relative;
+	height: 95%;
+	width: 100%;
+	background-size: 2000px 287.5px, auto, cover;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.minorheader {
+	position: relative;
+	background: #FFFFFA;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 6em;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-top-width: 2px;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.minorheader:before {
+	top: 10px;
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.bottomheader {
+	position: relative;
+	background: #FFFFFA;
+	height: 4em;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-top-width: 2px;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.bottomheader:before {
+	top: -10px;
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#four:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: 110%;
+	left: calc(50% - 1px);
+	position: absolute;
+	top: 0;
+	width: 2px;
+	z-index: -1;
+}
+
+#championshipheader {
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/top-1600.svg), url("images/overlay.png"), url(images/halloffame.jpg);
+	background-position:  bottom center, top left, top center;
+	background-repeat: no-repeat, repeat, no-repeat;
+	position: relative;
+	height: 95%;
+	width: 100%;
+	background-size: 2000px 287.5px, auto, cover;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#victorybellheader {
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/top-1600.svg), url("images/overlay.png"), url(images/uscvictorybell.jpg);
+	background-position:  bottom center, top left, center center;
+	background-repeat: no-repeat, repeat, no-repeat;
+	position: relative;
+	height: 95%;
+	width: 100%;
+	background-size: 2000px 287.5px, auto, cover;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+}
+
