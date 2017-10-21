@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#timeline-button").click(function(){
+        $('#timeline-section').show();
+        $('#crosstown-section').hide();
+        $('#victory-section').hide();
+    });
+    $("#crosstown-button").click(function(){
+        $('#timeline-section').hide();
+        $('#crosstown-section').show();
+        $('#victory-section').hide();
+    });
+    $("#victory-button").click(function(){
+        $('#timeline-section').hide();
+        $('#crosstown-section').hide();
+        $('#victory-section').show();
+    });
+});
