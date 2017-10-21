@@ -11,6 +11,10 @@
         <!--<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700" rel="stylesheet"> -->
         <!--<link href="https://fonts.googleapis.com/css?family=Esteban" rel="stylesheet"> -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <!-- Custom Scripts For Class -->
+        <script type="text/javascript" src="school-picker.js"></script>
+
     </head>
 
     <body>
@@ -45,14 +49,17 @@
             <div id="usc-homepage">
               <img src="images/usc.png" class="logo">
               <p>The University of Southern California is home of the Trojans and a leading private research university located in Los Angeles. It is a global center for arts, technology and international business and home to the College of Letters, Arts and Sciences and 21 exceptional academic schools and units. USC's Health Sciences campus houses renowned specialized care and research in cancer, stem cell and regenerative medicine, orthopedics and sports medicine. The university is the largest private sector employer in the city of Los Angeles, responsible for $8 billion annually in economic activity in the region.</p>
-              <button class="button-usc pick">Pick USC</button>
+
+              <audio id="usc-song" src="http://fightmusic.com/mp3/pac12/USC__Fight_On__new.mp3"></audio>
+              <button onmouseover="document.getElementById('usc-song').play()" onmouseout="document.getElementById('usc-song').pause()" class="button-usc pick">Pick USC</button>
             </div>
 
             <div id="ucla-homepage" >
               <img src="images/ucla.png" class="logo">
               <p>From humble beginnings to becoming the most applied-to university in the nation, the University of California Los Angeles has a history of rewriting it. Broad thinking and optimistic perspectives have always been their catalysts-allowing them to redefine possible time after time. In each field, across all disciplines and in every arena-greatness has become the UCLA hallmark. UCLA generates roughly $12.7 billion in economic activity a year to help power the Greater Los Angeles region. And an active portfolio of almost 3,000 inventions and more than 900 patents means UCLA plays a central role in shaping the world we all live in.</p>
 
-              <button class="button-ucla pick">Pick UCLA</button>
+              <audio id="ucla-song" src="http://fightmusic.com/mp3/pac12/UCLA__The_Mighty_Bruins.mp3"></audio>
+              <button onmouseover="document.getElementById('ucla-song').play()" onmouseout="document.getElementById('ucla-song').pause()" class="button-ucla pick">Pick UCLA</button>
             </div>
 
           </div>
@@ -72,23 +79,5 @@
 
     </body>
 
-    <script>
-    $(".button-ucla").click(function(){
-      $(".navbar").css({'background-color': '#3284bf'});
-      $("footer").css({'background-color': '#3284bf'});
-      $("footer *").css({'color': 'white'});
-    });
-    </script>
-
-    <script>
-    $(".button-usc").click(function(){
-      $(".navbar").css({'background-color': '#990000'});
-      $("footer").css({'background-color': '#990000'});
-      $("footer *").css({'color': 'white'});
-    });
-    </script>
-
-
-    </script>
 
 </html>

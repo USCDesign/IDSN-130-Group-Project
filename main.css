@@ -138,7 +138,7 @@ a {
 }
 
 .hyperlink {
-	border-bottom: dotted 1px; 
+	border-bottom: dotted 1px;
 }
 
 
@@ -437,7 +437,7 @@ footer {
 /* Links inside the navbar */
 .navbar a {
     font-family: 'Raleway', 'Montserrat', sans-serif;
-	font-weight: 400;
+	  font-weight: 400;
     font-size: 16px;
     color: #f2f2f2;
     font-weight: 200;
@@ -502,7 +502,7 @@ footer {
 	text-align: center;
 	font-size: 32px;
 }
-            
+
 .majorheader {
 	position: relative;
 	background: #FFFFFA;
@@ -522,7 +522,7 @@ footer {
 .majorheader p {
 	padding: 0 10%;
 }
-            
+
 .majorheader:before {
 	top: 10px;
 	background: rgba(224, 224, 224, 0.75);
@@ -561,11 +561,11 @@ footer {
 	width: 100%;
 	height: 56.25%;
 }
-         
+
 .rivalrycontent {
 	margin-bottom: 3em;
 }
-			
+
 #timeline:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
@@ -576,7 +576,7 @@ footer {
 	width: 1px;
 	z-index: -1;
 }
-			
+
 #timeline {
 	position: relative;
 	width: 80%;
@@ -584,9 +584,9 @@ footer {
 	margin-left: 10%;
 	margin-right: 10%;
 	height: auto;
-	align-content: center;				
+	align-content: center;
 }
-			
+
 .timeline, .schooltimeline {
 	padding: 0;
 	margin: 0;
@@ -604,7 +604,7 @@ footer {
 	font-size: 20px;
 	letter-spacing: 2px;
 }
-            
+
 #timeline td img {
 	max-width: 100%;
 	height: auto;
@@ -626,7 +626,7 @@ footer {
 .timelineaudio h4 {
 	padding-bottom: 0.75em;
 }
-	
+
 
 
 .historyleft {
@@ -634,12 +634,12 @@ footer {
 	text-align: left;
 	padding: 5%;
 }
-			
+
 .historyright {
 	text-align: right;
 	padding: 5%;
-} 
-		
+}
+
 #three:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
@@ -759,3 +759,45 @@ footer {
 	color: rgba(255, 255, 255, 0.8);
 }
 
+
+.navbar.usc {
+  background-color: #990000;
+}
+
+.navbar.ucla {
+  background-color: #3284bf;
+}
+
+footer.usc{
+  background-color: #990000;
+}
+
+footer.ucla {
+  background-color: #3284bf;
+}
+
+
+
+
+
+/*Overview Page*/
+
+#overview {
+  position: relative;
+  width: 80%;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  align-content: center;
+}
+
+#overview th{
+  padding: 0 3em 2em 3em;
+  border-bottom: solid 1px #dfdfdf;
+}
+
+.overview-table {
+  margin: 0;
+  width: 50%;
+}
