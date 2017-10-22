@@ -29,7 +29,7 @@
             <div id=home-overlay>
             </div>
               -->
-      </header>
+</header>
       <div class="navbar">
          <a href="index.html">Home</a>
          <a href="overviews.html">Overviews</a>
@@ -38,43 +38,44 @@
       </div>
         
          
-           <section id="two">
-   <div id="homepage-body" >
-
-			  <br>
-               
-            <div class="majorheader">
-                <h1>Overview</h1>
-            </div> 
+	   <section id="two">
+		   <div id="homepage-body" >
+			   <div id="overview-section">
+				   <br>
+				   <div class="majorheader">
+					   <h1>Overview</h1>
+				   </div> 
  
-     <div class="overviewcontent">
-				<div class="centered">
-            		<enrollment>Student Enrollment</enrollment>
-             		<enrollment id="RevealEnrollment"><br>44,000&nbsp;&nbsp;&nbsp;&nbsp;45,000</enrollment>
-				</div>
-				<img id="studentbody" src="images/StudentBody.jpg" alt="student body image" >    
-	  </div>
+				   <div class="overviewcontent">
+					   <div class="centered">
+						   <enrollment>Student Enrollment</enrollment>
+						   <enrollment id="RevealEnrollment"><br>44,000&nbsp;&nbsp;&nbsp;&nbsp;45,000</enrollment>
+					   </div>
+					   <img id="studentbody" src="images/StudentBody.jpg" alt="student body image" >    
+				   </div>
      
-      <div class="mascotdiv">
-				<div class="centered">
-            		<mascot >Mascot</mascot>
-             		<mascot id="RevealMascot"><br>Traveler&nbsp;&nbsp;Joe&nbsp;Bruin</mascot>
-				</div>
-				<img id="mascots" src="images/Mascots.jpg" alt="Mascots" >    
-		             
-	  </div>      
+				   <div class="mascotdiv">
+					   <div class="centered">
+						   <mascot>Mascot</mascot>
+						   <mascot id="RevealMascot"><br>Traveler&nbsp;&nbsp;Joe&nbsp;Bruin</mascot>
+					   </div>
+					   <img id="mascots" src="images/Mascots.jpg" alt="Mascots" >    
+				   </div>      
                    
-      <div class="ranking">
-				<div class="centered">
-            		<rank>US News & World Reports 2018 Ranking</rank>
-             		<rank id="RevealRank"><br>21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21<br>Tied!</rank>
-				</div>
-				<img id="ranking" src="images/Ranking.jpg" alt="USC and UCLA Buildings" >    
-		             
-	  </div>      
+				   <div class="ranking">
+					   <div class="centered">
+						   <rank>US News &amp; World Reports 2018 Ranking</rank>
+						   <rank id="RevealRank"><br>21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21<br>Tied!</rank>
+					   </div>
+					   <img id="ranking" src="images/Ranking.jpg" alt="USC and UCLA Buildings" >    
+				   </div> 
+				   
+				   <div class="bottomheader"></div>
                
-                 
-             </div>
+			   </div>
+		   </div>
+	   </section>
+			   
                                 
     
         <!--<div class="before"></div>-->
@@ -155,10 +156,9 @@
                   </tr>
                </tbody>
             </table>
-				</section>
-			</div>
+		
 
-			<div class="bottomheader"></div>
+			
      
       <footer>
          <div class="footertext">
@@ -191,9 +191,11 @@
       $(".overviewcontent").hover(function(){
         $(".centered enrollment").css("display", "none");
         $("#RevealEnrollment").css("display", "block");
+		$("#studentbody").attr("src", "images/StudentBody2.jpg");
       },function(){
         $(".centered enrollment").css("display", "block");
         $("#RevealEnrollment").css("display", "none");
+		$("#studentbody").attr("src", "images/StudentBody.jpg");
       });
     });
 </script>
@@ -215,9 +217,11 @@
       $(".ranking").hover(function(){
         $(".centered rank").css("display", "none");
         $("#RevealRank").css("display", "block");
+		$("#ranking").attr("src", "images/Ranking2.jpg");
       },function(){
         $(".centered rank").css("display", "block");
         $("#RevealRank").css("display", "none");
+		$("#ranking").attr("src", "images/Ranking.jpg");
       });
     });
 </script>
