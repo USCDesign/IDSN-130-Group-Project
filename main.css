@@ -779,8 +779,17 @@ footer.ucla {
 
 
 
-
 /*Overview Page*/
+#overview:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: 100%;
+	margin-left:  left: 50%;
+	position: relative;
+	top: 0;
+	width: 1px;
+	z-index: -1;
+}
 
 #overview {
   position: relative;
@@ -797,7 +806,94 @@ footer.ucla {
   border-bottom: solid 1px #dfdfdf;
 }
 
-.overview-table {
+
+.overview {
+  padding: 0;
   margin: 0;
   width: 50%;
 }
+
+
+.overview-table h3 {
+	padding-bottom: 0.35em;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+
+#overview td img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+#overview th {
+	padding: 0 3em 2em 3em;
+	border-bottom: solid 1px #dfdfdf;
+}
+
+
+.overviewcontent {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+#RevealEnrollment, #RevealMascot, #RevealRank {
+	display:none;
+}
+.mascotdiv {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.ranking {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+#overviewcontent img, #mascotdiv img, #ranking img {
+	position: absolute;
+	align-content: center; 
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.centered, .enrollment, .mascot, .rank {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    color: white;
+    font-weight: 700;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+
