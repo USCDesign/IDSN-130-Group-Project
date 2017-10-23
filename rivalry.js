@@ -3,19 +3,26 @@ $(document).ready(function(){
         $('#timeline-section').show();
         $('#crosstown-section').hide();
         $('#victory-section').hide();
+<<<<<<< HEAD
 		    $("#two:before").css("height", "630%");
+=======
+		$("#two:before").css("height", "630%");
+		$("#rivalryheader").css("background-image", "url(images/top-1600.svg), url(images/overlay.png), url(images/oldticket.jpg)");
+>>>>>>> a1cf285dcd604c4ac000b8f71185315cbf2931dd
     });
     $("#crosstown-button").click(function(){
         $('#timeline-section').hide();
         $('#crosstown-section').show();
         $('#victory-section').hide();
-		    $("#two:before").css("height", "100%");
+		$("#two:before").css("height", "100%");
+		$("#rivalryheader").css("background-image", "url(images/top-1600.svg), url(images/overlay2.png), url(images/crosstowncup.jpg)");
     });
     $("#victory-button").click(function(){
         $('#timeline-section').hide();
         $('#crosstown-section').hide();
         $('#victory-section').show();
-		    $("#two:before").css("height", "100%");
+		$("#two:before").css("height", "100%");
+		$("#rivalryheader").css("background-image", "url(images/top-1600.svg), url(images/overlay.png), url(images/uclavictorybell.jpg)");
     });
 
     $("#timeline-page-button").click(function(){

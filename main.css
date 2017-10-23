@@ -381,7 +381,7 @@ footer {
   display: inline-block;
   margin-left: 10%;
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 #usc-homepage {
@@ -514,7 +514,7 @@ footer {
 #crosstown-section:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 100%;
+	height: 500%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -536,7 +536,7 @@ footer {
 #overview-section:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 280%;
+	height: 510%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -674,7 +674,17 @@ footer {
 	padding-bottom: 0.75em;
 }
 
+.ccimages {
+	padding: 0;
+	margin: 0;
+	width: 70%;
+}
 
+.uclaccimages {
+	padding: 0;
+	margin: 0;
+	width: 80%;
+}
 
 .historyleft {
 	/* max-width: inherit; */
@@ -690,7 +700,7 @@ footer {
 #three:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 285%;
+	height: 310%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -742,10 +752,11 @@ footer {
 .bottomheader {
 	position: relative;
 	background: #FFFFFA;
-	height: 4em;
+	height: 8em;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 0;
 	border-color: #dfdfdf;
 	border-style: solid;
 	border-top-width: 2px;
@@ -832,6 +843,53 @@ footer {
 	float: left;
 }
 
+#cc-usc {
+	background-color: #990000;
+	width: 62.5%;
+	height: 20px;
+	float: left;
+}
+
+#cc-ucla {
+	background-color: #3284bf;
+	width: 37.5%;
+	height: 20px;
+	float: left;
+}
+
+#cctable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#cctable h5 {
+	font-size: 18px;
+	padding: 0.1em 0;
+}
+
+#cctable th {
+	border: 1px solid rgba(224, 224, 224, 0.75);
+}
+
+#cctable h3 {
+	font-size: 21px;
+	padding: 0.2em 0;
+}
+
+
+.cctype {
+	padding: 0.3em 0; 
+	background-color: rgba(224, 224, 224, 0.75);
+}
+
+.usctextcolor {
+	color: #990000;
+}
+
+.uclatextcolor {
+	color: #3284bf;
+}
+
 
 .navbar.usc {
   background-color: #990000;
@@ -858,6 +916,21 @@ footer.ucla {
 
 
 /*Overview Page*/
+#overviewheader {
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/top-1600.svg), url("images/overlay3.png"), url(images/overviewheader.jpg);
+	background-position:  bottom center, top left, top center;
+	background-repeat: no-repeat, repeat, no-repeat;
+	position: relative;
+	height: 95%;
+	width: 100%;
+	background-size: 2000px 287.5px, auto, cover;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+}
+
 #overview:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
@@ -923,7 +996,7 @@ footer.ucla {
 	text-align: center;
 	display: block;
 }
-#RevealEnrollment, #RevealMascot, #RevealRank, #RevealLocation, #RevealStudent {
+#RevealEnrollment, #RevealMascot, #RevealRank, #RevealLocation, #RevealStudent, #RevealChampion, #RevealStatue {
 	display:none;
 }
 .mascotdiv {
@@ -962,6 +1035,30 @@ footer.ucla {
 	display: block;
 }
 
+.statuesDiv {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.championshipDiv {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
 .studentsDiv {
 	position: relative;
 	background: #FFFFFA;
@@ -974,13 +1071,13 @@ footer.ucla {
 	display: block;
 }
 
-#studentbody, #mascots, #ranking, #location, #students {
+#studentbody, #mascots, #ranking, #location, #championships, #students, #statue {
 	padding: 0;
 	margin: 0;
 	max-width:100%;
 }
 
-.centered, .enrollment, .mascot, .rank, .location, .students {
+.centered, .enrollment, .mascot, .rank, .location, .students, .champion, .statue {
     position: absolute;
     top: 50%;
     left: 50%;
