@@ -1,0 +1,195 @@
+<html>
+   <head>
+      <title>School Overviews</title>
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+      <!-- Custom Scripts For Class -->
+      <script type="text/javascript" src="school-picker.js"></script>
+          
+   </head>
+   <body>
+   <header id="rivalryheader">
+         <div id="hometext">
+            <p class="whitehorizontalbar"></p>
+            <h1 class="whitetext">USC vs. UCLA</h1>
+            <h2 class="whitetext">School Overviews</h2>
+            <p class="whitehorizontalbar"></p>
+         </div>
+         <!--
+            <a href="#one" class="scrollarrow">
+              <h2 class="whitetext">
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              </h2>
+            </a>
+            <div id=home-overlay>
+            </div>
+              -->
+</header>
+      <div class="navbar">
+         <a href="index.html">Home</a>
+         <a href="overviews.html">Overviews</a>
+         <a href="history.html">Histories</a>
+         <a href="rivalry.html">Rivalry</a>
+      </div>
+        
+         
+	   <section id="two">
+		   <div id="homepage-body" >
+			   <div id="overview-section">
+				   <br>
+				   <div class="majorheader">
+					   <h1>Overview</h1>
+				   </div> 
+
+				   
+				   <div class="overviewcontent">
+					   <div class="centered">
+						   <enrollment>Student Enrollment</enrollment>
+						   <enrollment id="RevealEnrollment"><br>44,000&nbsp;&nbsp;&nbsp;&nbsp;45,000</enrollment>
+					   </div>
+					   <img id="studentbody" src="images/StudentBody.jpg" alt="student body image" >    
+				   </div>
+     
+				   <div class="mascotdiv">
+					   <div class="centered">
+						   <mascot>Mascot</mascot>
+						   <mascot id="RevealMascot"><br>Traveler&nbsp;&nbsp;Joe&nbsp;Bruin</mascot>
+					   </div>
+					   <img id="mascots" src="images/Mascots.jpg" alt="Mascots" >    
+				   </div>      
+                   
+				   <div class="ranking">
+					   <div class="centered">
+						   <rank>US News &amp; World Reports 2018 Ranking</rank>
+						   <rank id="RevealRank"><br>21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21<br>Tied!</rank>
+					   </div>
+					   <img id="ranking" src="images/Ranking.jpg" alt="USC and UCLA Buildings" >    
+				   </div> 
+	
+ 
+      			 <div class="locationDiv">
+					<div class="centered">
+            			<location >Location</location>
+             			<location id="RevealLocation"><br>Downtown&nbsp;&nbsp;&nbsp;&nbsp;Westwood</location>
+					</div>
+					<img id="location" src="images/location.jpg" alt="USC and UCLA Locations" >    
+		             
+	  			</div>   
+				<div class="studentsDiv">
+					<div class="centered">
+						<students>Students&nbsp;Known&nbsp;As</students>
+             			<students id="RevealStudent"><br>Trojans!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bruins!</students>
+					</div>
+				<img id="students" src="images/students.jpg" alt="USC and UCLA Students" >    
+		             
+	 			 </div>      			   			   
+				   <div class="bottomheader"></div>
+               
+			   </div>
+		   </div>
+	   </section>
+			   
+                                
+         
+      <footer>
+         <div class="footertext">
+            <h5 class="lightgrey">
+               <a href="https://design.usc.edu/" target="_blank" style="border-bottom:none;"><i class="fa fa-hand-peace-o fa-3x" aria-hidden="true"></i></a><br><br>
+               Group 4
+            </h5>
+            <h6 class="lightgrey">addison, nicole & lara</h6>
+         </div>
+      </footer>
+   </body>
+   <script>
+      $(".button-ucla").click(function(){
+        $(".navbar").css({'background-color': '#3284bf'});
+        $("footer").css({'background-color': '#3284bf'});
+        $("footer *").css({'color': 'white'});
+      });
+   </script>
+   <script>
+      $(".button-usc").click(function(){
+        $(".navbar").css({'background-color': '#990000'});
+        $("footer").css({'background-color': '#990000'});
+        $("footer *").css({'color': 'white'});
+      });
+   </script>
+
+
+<script>
+    $(document).ready(function(){
+      $(".overviewcontent").hover(function(){
+        $(".centered enrollment").css("display", "none");
+        $("#RevealEnrollment").css("display", "block");
+		$("#studentbody").attr("src", "images/StudentBody2.jpg");
+      },function(){
+        $(".centered enrollment").css("display", "block");
+        $("#RevealEnrollment").css("display", "none");
+		$("#studentbody").attr("src", "images/StudentBody.jpg");
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".mascotdiv").hover(function(){
+        $(".centered mascot").css("display", "none");
+        $("#RevealMascot").css("display", "block");
+		$("#mascotdiv").attr("src", "images/Mascot2.jpg");
+      },function(){
+        $(".centered mascot").css("display", "block");
+        $("#RevealMascot").css("display", "none");
+		$("#mascotdiv").attr("src", "images/Mascot.jpg");
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".ranking").hover(function(){
+        $(".centered rank").css("display", "none");
+        $("#RevealRank").css("display", "block");
+		$("#ranking").attr("src", "images/Ranking2.jpg");
+      },function(){
+        $(".centered rank").css("display", "block");
+        $("#RevealRank").css("display", "none");
+		$("#ranking").attr("src", "images/Ranking.jpg");
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".locationDiv").hover(function(){
+        $(".centered location").css("display", "none");
+        $("#RevealLocation").css("display", "block");
+		$("#locationDiv").attr("src", "images/location2.jpg");
+      },function(){
+        $(".centered location").css("display", "block");
+        $("#RevealLocation").css("display", "none");
+		$("#locationDiv").attr("src", "images/location.jpg");
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".studentsDiv").hover(function(){
+        $(".centered students").css("display", "none");
+        $("#RevealStudent").css("display", "block");
+		$("#studentsDiv").attr("src", "images/students2.jpg");
+      },function(){
+        $(".centered students").css("display", "block");
+        $("#RevealStudent").css("display", "none");
+		$("#studentsDiv").attr("src", "images/students.jpg");
+      });
+    });
+</script>
+
+</html>
