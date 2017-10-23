@@ -13,7 +13,7 @@
           
    </head>
    <body>
-   <header id="rivalryheader">
+   <header id="overviewheader">
          <div id="hometext">
             <p class="whitehorizontalbar"></p>
             <h1 class="whitetext">USC vs. UCLA</h1>
@@ -79,7 +79,25 @@
 					</div>
 					<img id="location" src="images/location.jpg" alt="USC and UCLA Locations" >    
 		             
-	  			</div>   
+	  			</div> 
+				   
+				<div class="statuesDiv">
+					<div class="centered">
+            			<statue >Official&nbsp;Statues</statue>
+             			<statue id="RevealStatue"><br>Tommy&nbsp;&nbsp;&nbsp;Bruin<br>Trojan&nbsp;&nbsp;&nbsp;&nbsp;Bear&nbsp;&nbsp;</statue>
+					</div>
+					<img id="statue" src="images/statues.jpg" alt="USC and UCLA Statues" >    
+		             
+	  			</div> 
+				   
+				<div class="championshipDiv">
+					<div class="centered">
+            			<champion >NCAA&nbsp;Championships</champion>
+             			<champion id="RevealChampion"><br>104&nbsp;&nbsp;&nbsp;&nbsp;113</champion>
+					</div>
+					<img id="championship" src="images/championships.jpg" alt="USC and UCLA Championships" >    
+		             
+	  			</div>
 				<div class="studentsDiv">
 					<div class="centered">
 						<students>Students&nbsp;Known&nbsp;As</students>
@@ -141,11 +159,11 @@
       $(".mascotdiv").hover(function(){
         $(".centered mascot").css("display", "none");
         $("#RevealMascot").css("display", "block");
-		$("#mascotdiv").attr("src", "images/Mascot2.jpg");
+		$("#mascots").attr("src", "images/Mascots2.jpg");
       },function(){
         $(".centered mascot").css("display", "block");
         $("#RevealMascot").css("display", "none");
-		$("#mascotdiv").attr("src", "images/Mascot.jpg");
+		$("#mascots").attr("src", "images/Mascots.jpg");
       });
     });
 </script>
@@ -169,11 +187,39 @@
       $(".locationDiv").hover(function(){
         $(".centered location").css("display", "none");
         $("#RevealLocation").css("display", "block");
-		$("#locationDiv").attr("src", "images/location2.jpg");
+		$("#location").attr("src", "images/location2.jpg");
       },function(){
         $(".centered location").css("display", "block");
         $("#RevealLocation").css("display", "none");
-		$("#locationDiv").attr("src", "images/location.jpg");
+		$("#location").attr("src", "images/location.jpg");
+      });
+    });
+</script>
+	
+<script>
+    $(document).ready(function(){
+      $(".statuesDiv").hover(function(){
+        $(".centered statue").css("display", "none");
+        $("#RevealStatue").css("display", "block");
+		$("#statue").attr("src", "images/statues2.jpg");
+      },function(){
+        $(".centered statue").css("display", "block");
+        $("#RevealStatue").css("display", "none");
+		$("#statue").attr("src", "images/statues.jpg");
+      });
+    });
+</script>
+	
+<script>
+    $(document).ready(function(){
+      $(".championshipDiv").hover(function(){
+        $(".centered champion").css("display", "none");
+        $("#RevealChampion").css("display", "block");
+		$("#championship").attr("src", "images/championships2.jpg");
+      },function(){
+        $(".centered champion").css("display", "block");
+        $("#RevealChampion").css("display", "none");
+		$("#championship").attr("src", "images/championships.jpg");
       });
     });
 </script>
@@ -183,11 +229,11 @@
       $(".studentsDiv").hover(function(){
         $(".centered students").css("display", "none");
         $("#RevealStudent").css("display", "block");
-		$("#studentsDiv").attr("src", "images/students2.jpg");
+		$("#students").attr("src", "images/students2.jpg");
       },function(){
         $(".centered students").css("display", "block");
         $("#RevealStudent").css("display", "none");
-		$("#studentsDiv").attr("src", "images/students.jpg");
+		$("#students").attr("src", "images/students.jpg");
       });
     });
 </script>
