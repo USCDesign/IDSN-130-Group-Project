@@ -854,6 +854,9 @@ footer.ucla {
 
 
 
+
+
+
 /*Overview Page*/
 #overview:before {
 	background: rgba(224, 224, 224, 0.75);
@@ -971,13 +974,10 @@ footer.ucla {
 	display: block;
 }
 
-#overviewcontent img, #mascotdiv img, #ranking img, #locationDiv img, #studentDiv img {
-	position: absolute;
-	align-content: center; 
-	max-width: 100%;
-	height: auto;
+#studentbody, #mascots, #ranking, #location, #students {
 	padding: 0;
 	margin: 0;
+	max-width:100%;
 }
 
 .centered, .enrollment, .mascot, .rank, .location, .students {
@@ -994,5 +994,4 @@ footer.ucla {
     text-transform: uppercase;
     letter-spacing: 8px;
 }
-
 
