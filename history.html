@@ -1,17 +1,20 @@
 <html>
-    <head>
-        <title>The Crosstown Rivalry</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <head>
+      <title>The Crosstown Rivalry</title>
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="nav.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-        <!-- Custom Scripts For Class -->
-        <script type="text/javascript" src="school-picker.js"></script>
+      <!-- Custom Scripts For Class -->
+      <script type="text/javascript" src="school-picker.js"></script>
+      <script type="text/javascript" src="nav.js"></script>
+      <script type="text/javascript" src="rivalry.js"></script>
 
-    </head>
+  </head>
 
     <body>
       <header id="historyheader">
@@ -24,12 +27,27 @@
           </div>
       </header>
 
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="overviews.html">Overviews</a>
-        <a href="history.html">Histories</a>
-        <a href="rivalry.html">Rivalry</a>
-      </div>
+      <nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="overview.html">Overview</a>
+					</li>
+					<li>
+						<a href="history.html">History</a>
+					</li>
+					<li>
+						<a href="rivalry.html">Rivalry</a>
+						<ul class="fallback">
+							<li><a href="rivalry.html#timeline-page" id="timeline-page-button">Timeline</a></li>
+							<li><a href="rivalry.html#crosstown-page" id="crosstown-page-button">Crosstown Cup</a></li>
+							<li><a href="rivalry.html#victory-page" id="victory-page-button">Victory Bell</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 
 
         <section id="three">

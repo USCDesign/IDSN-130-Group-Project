@@ -3,8 +3,8 @@ $( document ).ready(function() {
   if(teamstatus=='usc'){
 
       //Set Nav Styles
-      $( ".navbar" ).addClass( 'usc' );
-      $( ".navbar" ).removeClass( 'ucla' );
+      $( "nav" ).addClass( 'usc' );
+      $( "nav" ).removeClass( 'ucla' );
 
       //Set Footer Styles
       $( "footer" ).addClass( 'usc' );
@@ -14,8 +14,8 @@ $( document ).ready(function() {
   else if (teamstatus=='ucla'){
 
       //Set Nav Styles
-      $( ".navbar" ).addClass( 'ucla' );
-      $( ".navbar" ).removeClass( 'usc' );
+      $( "nav" ).addClass( 'ucla' );
+      $( "nav" ).removeClass( 'usc' );
 
       //Set Footer Styles
       $( "footer" ).addClass( 'ucla' );
@@ -27,8 +27,8 @@ $( document ).ready(function() {
     .click( function() {
 
       //Set Nav Styles
-      $( ".navbar" ).addClass( 'usc' );
-      $( ".navbar" ).removeClass( 'ucla' );
+      $( "nav" ).addClass( 'usc' );
+      $( "nav" ).removeClass( 'ucla' );
 
       //Set Footer Styles
       $( "footer" ).addClass( 'usc' );
@@ -43,8 +43,8 @@ $( document ).ready(function() {
     .click( function() {
 
       //Set Nav Styles
-      $( ".navbar" ).addClass( 'ucla' );
-      $( ".navbar" ).removeClass( 'usc' );
+      $( "nav" ).addClass( 'ucla' );
+      $( "nav" ).removeClass( 'usc' );
 
       //Set Nave Styles
       $( "footer" ).addClass( 'ucla' );

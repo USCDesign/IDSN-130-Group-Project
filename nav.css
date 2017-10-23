@@ -1,0 +1,66 @@
+/* =============================================================================
+   Navigation Core Styles
+   ========================================================================== */
+
+nav {
+  background:#333;
+  float:left;
+  position:absolute;
+  top:0px;
+  width: 100%;
+  text-align: center;
+  }
+nav ul {
+  text-align:center;
+  padding-left: 0em;
+  }
+
+nav ul li {
+  width: 22%;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  display: inline-block;
+  border-bottom: none;
+  }
+nav ul li:hover {
+  background:#636363;
+  }
+
+nav ul li a {
+  display:block;
+  padding:15px 25px;color:#444;
+  font-family: 'Raleway', 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f2f2f2;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration:none;
+  }
+nav ul li ul {
+  position:absolute;
+  width:22%;
+  background:#FFF;
+  }
+nav ul li ul li {margin:0;padding:0;width:auto;background:#FFF;}
+nav ul li ul li a {display:block;padding:15px 10px;color:#444;width: 100%;text-decoration:none;}
+nav ul li ul li:hover a {background:#F7F7F7;font-weight:bold}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+
+* {margin:0;padding:0;}
+a {text-decoration:none;}
+
+/* =============================================================================
+   Navigation School Styles
+   ========================================================================== */
+
+nav.usc {
+  background-color: #990000;
+}
+
+
+nav.ucla {
+  background-color: #3284bf;
+}
