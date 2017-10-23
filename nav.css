@@ -23,7 +23,12 @@ nav ul li {
   border-bottom: none;
   }
 nav ul li:hover {
-  background:#636363;
+  background:#f2f2f2;
+  color: 990000;
+  }
+
+nav ul li:hover a{
+  color: #333;
   }
 
 nav ul li a {
@@ -45,7 +50,7 @@ nav ul li ul {
   }
 nav ul li ul li {margin:0;padding:0;width:auto;background:#FFF;}
 nav ul li ul li a {display:block;padding:15px 10px;color:#444;width: 100%;text-decoration:none;}
-nav ul li ul li:hover a {background:#F7F7F7;font-weight:bold}
+nav ul li ul li:hover a {background:#F7F7F7;}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
 
@@ -64,3 +69,11 @@ nav.usc {
 nav.ucla {
   background-color: #3284bf;
 }
+
+nav.usc ul li:hover a{
+  color: #990000;
+  }
+
+nav.ucla ul li:hover a{
+  color: #3284bf;
+  }
