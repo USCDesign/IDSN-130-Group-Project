@@ -232,7 +232,7 @@ hr {
     bottom: 0;
     color: inherit;
     font-size: 0.6em;
-    height: 8.5em;
+    height: 14.5em;
     left: 50%;
     margin-left: -8.5em;
     opacity: 1;
@@ -878,7 +878,7 @@ footer {
 
 
 .cctype {
-	padding: 0.3em 0; 
+	padding: 0.3em 0;
 	background-color: rgba(224, 224, 224, 0.75);
 }
 
@@ -1091,4 +1091,3 @@ footer.ucla {
     text-transform: uppercase;
     letter-spacing: 8px;
 }
-
