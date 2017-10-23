@@ -920,7 +920,7 @@ footer.ucla {
 	text-align: center;
 	display: block;
 }
-#RevealEnrollment, #RevealMascot, #RevealRank {
+#RevealEnrollment, #RevealMascot, #RevealRank, #RevealLocation, #RevealStudent {
 	display:none;
 }
 .mascotdiv {
@@ -947,7 +947,31 @@ footer.ucla {
 	display: block;
 }
 
-#overviewcontent img, #mascotdiv img, #ranking img {
+.locationDiv {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+.studentsDiv {
+	position: relative;
+	background: #FFFFFA;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 6em;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+#overviewcontent img, #mascotdiv img, #ranking img, #locationDiv img, #studentDiv img {
 	position: absolute;
 	align-content: center; 
 	max-width: 100%;
@@ -956,7 +980,7 @@ footer.ucla {
 	margin: 0;
 }
 
-.centered, .enrollment, .mascot, .rank {
+.centered, .enrollment, .mascot, .rank, .location, .students {
     position: absolute;
     top: 50%;
     left: 50%;
