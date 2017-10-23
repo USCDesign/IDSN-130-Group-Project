@@ -45,7 +45,8 @@
 				   <div class="majorheader">
 					   <h1>Overview</h1>
 				   </div> 
- 
+
+				   
 				   <div class="overviewcontent">
 					   <div class="centered">
 						   <enrollment>Student Enrollment</enrollment>
@@ -69,7 +70,24 @@
 					   </div>
 					   <img id="ranking" src="images/Ranking.jpg" alt="USC and UCLA Buildings" >    
 				   </div> 
-				   
+	
+ 
+      			 <div class="locationDiv">
+					<div class="centered">
+            			<location >Location</location>
+             			<location id="RevealLocation"><br>Downtown&nbsp;&nbsp;&nbsp;&nbsp;Westwood</location>
+					</div>
+					<img src="images/location2.jpg" alt="USC and UCLA Locations" >    
+		             
+	  			</div>   
+				<div class="studentsDiv">
+					<div class="centered">
+						<students>Students&nbsp;Known&nbsp;As</students>
+             			<students id="RevealStudent"><br>Trojans!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bruins!</students>
+					</div>
+				<img src="images/students.jpg" alt="USC and UCLA Students" >    
+		             
+	 			 </div>      			   			   
 				   <div class="bottomheader"></div>
                
 			   </div>
@@ -77,89 +95,7 @@
 	   </section>
 			   
                                 
-    
-        <!--<div class="before"></div>-->
-           
-            <table class="overview-table">
-               <thead>
-                  <tr>
-                     <th></th>
-                     <th><h1 style="color:#990000;">USC</h1></th>
-                     <th><h1 style="color:#3284bf;">UCLA</h1></th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td># Students</td>
-                     <td>44k</td>
-                     <td>45k</td>
-                  </tr>
-                  <tr>
-                     <td>Mascot</td>
-                     <td>Traveler (white horse ridden by a Trojan)</td>
-                     <td>Joe Bruin (a bear)</td>
-                  </tr>
-                  <tr>
-                     <td>Unofficial Mascot</td>
-                     <td>Tommy Trojan (statue on campus)</td>
-                     <td>?</td>
-                  </tr>
-                  <tr>
-                     <td>Students & Alumni are Called...</td>
-                     <td>Trojans</td>
-                     <td>Bruins</td>
-                  </tr>
-                  <tr>
-                     <td>Sport Most Known For</td>
-                     <td>Football</td>
-                     <td>Basketball</td>
-                  </tr>
-                  <tr>
-                     <td>Other Strong Sports</td>
-                     <td>&nbsp;</td>
-                     <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                     <td>US News & World Reports 2018 Ranking (National Universities)</td>
-                     <td>21 (tied!)</td>
-                     <td>21 (tied!)</td>
-                  </tr>
-                  <tr>
-                     <td>Type of School</td>
-                     <td>Private</td>
-                     <td>Public</td>
-                  </tr>
-                  <tr>
-                     <td>Endowment</td>
-                     <td>$4.6B</td>
-                     <td>$3.9B</td>
-                  </tr>
-                  <tr>
-                     <td>LA Neighborhood</td>
-                     <td>Downtown Arts & Education Corridor</td>
-                     <td>Westwood</td>
-                  </tr>
-                  <tr>
-                     <td>Most Popular Majors</td>
-                     <td>Business, Management, Marketing and Related Support Services</td>
-                     <td>Business Economics</td>
-                  </tr>
-                  <tr>
-                     <td>Hand Sign</td>
-                     <td>&nbsp;</td>
-                     <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                     <td>Notable Alumni, Faculty and Students</td>
-                     <td> <a href="https://en.wikipedia.org/wiki/List_of_University_of_Southern_California_people">Noteable USC Alumni</a></td>
-                     <td> <a href="https://en.wikipedia.org/wiki/List_of_University_of_California,_Los_Angeles_people">Notable UCLA Alumni</a></td>
-                  </tr>
-               </tbody>
-            </table>
-		
-
-			
-     
+         
       <footer>
          <div class="footertext">
             <h5 class="lightgrey">
@@ -202,12 +138,14 @@
 
 <script>
     $(document).ready(function(){
-      $(".mascot").hover(function(){
+      $(".mascotdiv").hover(function(){
         $(".centered mascot").css("display", "none");
         $("#RevealMascot").css("display", "block");
+		$("#studentbody").attr("src", "images/Mascot2.jpg");
       },function(){
         $(".centered mascot").css("display", "block");
         $("#RevealMascot").css("display", "none");
+		$("#studentbody").attr("src", "images/Mascot.jpg");
       });
     });
 </script>
@@ -222,6 +160,34 @@
         $(".centered rank").css("display", "block");
         $("#RevealRank").css("display", "none");
 		$("#ranking").attr("src", "images/Ranking.jpg");
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".locationDiv").hover(function(){
+        $(".centered location").css("display", "none");
+        $("#RevealLocation").css("display", "block");
+		$("#locationDiv").attr("src", "images/location2.jpg");
+      },function(){
+        $(".centered location").css("display", "block");
+        $("#RevealLocation").css("display", "none");
+		$("#locationDiv").attr("src", "images/location.jpg");
+      });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".studentsDiv").hover(function(){
+        $(".centered students").css("display", "none");
+        $("#RevealStudent").css("display", "block");
+		$("#studentsDiv").attr("src", "images/students2.jpg");
+      },function(){
+        $(".centered students").css("display", "block");
+        $("#RevealStudent").css("display", "none");
+		$("#studentsDiv").attr("src", "images/students.jpg");
       });
     });
 </script>
