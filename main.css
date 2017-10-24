@@ -504,7 +504,7 @@ footer {
 #timeline-section:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 620%;
+	height: 150%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -515,7 +515,7 @@ footer {
 #crosstown-section:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 500%;
+	height: 150%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -526,7 +526,7 @@ footer {
 #victory-section:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 400%;
+	height: 150%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -534,10 +534,47 @@ footer {
 	z-index: -1;
 }
 
+#linedownmiddle {
+	position: relative;
+	z-index: 1;
+}
+
+#linedownmiddle:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: calc(100% - 6em);
+	top: auto;
+	left: calc(50% - 1px);
+	position: absolute;
+	width: 2px;
+	z-index: -1;
+}
+
+#historylinedownmiddle {
+	position: relative;
+	z-index: 1;
+	background-color: #FFFFFA;
+}
+
+#historylinedownmiddle:before {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	height: calc(100% - 6em);
+	top: auto;
+	left: calc(50% - 1px);
+	position: absolute;
+	width: 2px;
+	z-index: -1;
+}
+
+#overview-section {
+	background-color: #FFFFFA;
+}
+
 #overview-section:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 510%;
+	height: 150%;
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;
@@ -704,7 +741,7 @@ footer {
 #three:before {
 	background: rgba(224, 224, 224, 0.75);
 	content: '';
-	height: 310%;
+	height: calc(100% + 30px);
 	left: calc(50% - 1px);
 	position: absolute;
 	top: 0;

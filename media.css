@@ -1,5 +1,6 @@
 #historycontentmobile {
 	display: none;
+	background-color: #FFFFFA;
 }
 
 @media screen and (max-width: 1100px) {
@@ -61,12 +62,12 @@
 		display: block;
 	}
 	
-	#historycontent {
+	#historylinedownmiddle {
 		display: none;
 	}
 	
-	#timeline table th {
-		rowspan
+	#historycontent {
+		display: none;
 	}
 	
 	#three:before {
@@ -87,10 +88,10 @@
 		height: 0;
 	}
 	
-	
-	
+	#linedownmiddle:before {
+		height: calc(100% - 10em);
+	}
 }
-
 
 @media screen and (max-width: 600px) {
 	
@@ -112,9 +113,18 @@
 	
 	.timeline {
 		width: 100%;
-		column-span: all;
 		display: block;
 		text-align: center;
+	}
+	
+	#historycontentmobile .timeline {
+		width: 80%;
+	}
+	
+	
+	#historycontentmobile .timelineaudio {
+		width: 100%;
+		margin-right: 0;
 	}
 	
 	.historyright {
