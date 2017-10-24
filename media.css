@@ -1,3 +1,6 @@
+#historycontentmobile {
+	display: none;
+}
 
 @media screen and (max-width: 1100px) {
 	
@@ -13,7 +16,7 @@
 		margin-right: 5%;
 	}
 	
-	.bottomheader {
+	.bottomheader, .minorheader {
 		width: 90%;
 		margin-left: 5%;
 		margin-top: 5%;
@@ -26,6 +29,12 @@
 		margin-bottom: 20px;
 	}
 	
+	#timeline {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
 	.overviewcontent, .mascotdiv, .ranking, .locationDiv, .statuesDiv, .championshipDiv, .studentsDiv {
 		width: 90%;
 		margin-left: 5%;
@@ -36,6 +45,46 @@
 		font-size: 28px;
 		letter-spacing: 4px;
 		line-height: 28px;
+	}
+	
+}
+
+@media screen and (max-width: 750px) {
+	
+	/*
+	audio {
+		display: none;
+	}
+	*/
+	
+	#historycontentmobile {
+		display: block;
+	}
+	
+	#historycontent {
+		display: none;
+	}
+	
+	#timeline table th {
+		rowspan
+	}
+	
+	#three:before {
+		height: calc(100%  + 4em);
+	}
+	
+	.minorheader {
+		margin-bottom: 3em;
+	}
+	
+	.bottomheader, .minorheader {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+	
+	#mobilebottomheader {
+		height: 0;
 	}
 	
 }
