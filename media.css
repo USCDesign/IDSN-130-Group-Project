@@ -87,6 +87,8 @@
 		height: 0;
 	}
 	
+	
+	
 }
 
 
@@ -106,6 +108,45 @@
 	
 	.whitehorizontalbar {
 		width: calc(100vw - 25px);
+	}
+	
+	.timeline {
+		width: 100%;
+		column-span: all;
+		display: block;
+		text-align: center;
+	}
+	
+	.historyright {
+		background-color: #FFFFFA;
+		border-left: 2px solid #dfdfdf;
+		border-right: 2px solid #dfdfdf;
+		border-top: 2px solid #dfdfdf;
+		margin-top: 2em;
+		text-align: center;
+	}
+	
+	.historyleft {
+		background-color: #FFFFFA;
+		border-left: 2px solid #dfdfdf;
+		border-right: 2px solid #dfdfdf;
+		border-bottom: 2px solid #dfdfdf;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	
+	#historyimageleft {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 2em;
+	}
+	
+	#historyimageright {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 2em;
 	}
 	
 	.centered, .enrollment, .mascot, .rank, .location, .students, .champion, .statue {

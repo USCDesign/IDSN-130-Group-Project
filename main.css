@@ -607,8 +607,11 @@ footer {
 
 .videoheader iframe {
 	width: 100%;
-	height: 56.25%;
+	padding-bottom: 56.25%;
+	margin-bottom: -56.25%;
 }
+
+/* width="560" height="315" */
 
 .rivalrycontent {
 	margin-bottom: 3em;
