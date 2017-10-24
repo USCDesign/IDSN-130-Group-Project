@@ -1,0 +1,61 @@
+
+@media screen and (max-width: 1100px) {
+	
+	#homepage-body {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	.majorheader {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	.bottomheader {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+	
+	.overviewcontent, .mascotdiv, .ranking, .locationDiv, .statuesDiv, .championshipDiv, .studentsDiv {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%; 
+	}
+	
+	.centered, .enrollment, .mascot, .rank, .location, .students, .champion, .statue {
+		font-size: 28px;
+		letter-spacing: 4px;
+		line-height: 28px;
+	}
+	
+}
+
+
+@media screen and (max-width: 600px) {
+	
+	h1 {
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: 6px;
+	}
+	
+	h2 {
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: 4px;
+	}
+	
+	.whitehorizontalbar {
+		width: calc(100vw - 25px);
+	}
+	
+	.centered, .enrollment, .mascot, .rank, .location, .students, .champion, .statue {
+		font-size: 18px;
+		letter-spacing: 2px;
+		line-height: 18px;
+	}
+	
+}
