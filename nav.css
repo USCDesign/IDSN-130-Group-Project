@@ -3,129 +3,161 @@
    ========================================================================== */
 
 nav {
-  background:#333;
-  float:left;
-  position:absolute;
-  top:0px;
-  width: 100%;
-  text-align: center;
-  }
+    background: #333;
+    float: left;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
 nav ul {
-  text-align:center;
-  padding-left: 0em;
-  }
+    text-align: center;
+    padding-left: 0em;
+}
 
 nav ul li {
-  width: 22%;
-  text-align: center;
-  /*padding: 14px 16px;*/
-  display: inline-block;
-  border-bottom: none;
-  }
+    width: 22%;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    display: inline-block;
+    border-bottom: none;
+}
+
 nav ul li:hover {
-  background:#f2f2f2;
-  color: 990000;
-  }
+    background: #f2f2f2;
+    color: 990000;
+}
 
-nav ul li:hover a{
-  color: #333;
-  }
-
-
+nav ul li:hover a {
+    color: #333;
+}
 
 nav ul li a {
-  display:block;
-  padding:15px 25px;color:#444;
-  font-family: 'Raleway', 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #f2f2f2;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration:none;
-  }
-nav ul li ul {
-  position:absolute;
-  width:22%;
-  background:#FFF;
-  }
-nav ul li ul li {margin:0;
-  padding:0;
-  width:100%;
-  /*background:#FFF;*/
+    display: block;
+    padding: 15px 25px;
+    color: #444;
+    font-family: 'Raleway', 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f2f2f2;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
-nav ul li ul li a {display:block;padding:15px 0px;color:#444;width: 100%;text-decoration:none;}
-nav ul li ul li a:hover{
-  font-weight: 800;
-  background:transparent !important;
-}
-nav ul li ul.fallback {display:none;}
-nav ul li:hover ul.fallback {display:block;}
 
-* {margin:0;padding:0;}
-a {text-decoration:none;}
+nav ul li ul {
+    position: absolute;
+    width: 22%;
+    background: #FFF;
+}
+
+nav ul li ul li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*background:#FFF;*/
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 15px 0px;
+    color: #444;
+    width: 100%;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    font-weight: 800;
+    background: transparent !important;
+}
+
+nav ul li ul.fallback {
+    display: none;
+}
+
+nav ul li:hover ul.fallback {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /* =============================================================================
    Navigation School Styles
    ========================================================================== */
 
 nav.usc {
-  background-color: #990000;
+    background-color: #990000;
 }
-
 
 nav.ucla {
-  background-color: #3284bf;
+    background-color: #3284bf;
 }
 
-nav.usc ul li:hover a{
-  color: #990000;
-  }
+nav.usc ul li:hover a {
+    color: #990000;
+}
 
-nav.ucla ul li:hover a{
-  color: #3284bf;
-  }
+nav.ucla ul li:hover a {
+    color: #3284bf;
+}
+
 
 /* =============================================================================
    Navigation Responsiveness Styles
    ========================================================================== */
 
-   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-   @media screen and (max-width: 600px) {
-     nav ul li {
-       display: none;
-     }
 
-     nav.clicked ul li {
-       display: block;
-       width: 100%;
-       /*display: none;*/
-     }
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-     nav ul li ul {display: none !important;}
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: none;
+    }
+    nav.clicked ul li {
+        display: block;
+        width: 100%;
+        /*display: none;*/
+    }
+    nav ul li ul {
+        display: none !important;
+    }
+    nav ul li.icon {
+        float: right;
+        display: block;
+    }
+}
 
-     nav ul li.icon {
-       float: right;
-       display: block;
-     }
-   }
+@media screen and (min-width: 600px) {
+    nav ul li.icon {
+        display: none;
+    }
+}
 
-   @media screen and (min-width: 600px) {
-     nav ul li.icon { display: none;}
-   }
 
-   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-   @media screen and (max-width: 600px) {
-     .mobile-nav.responsive {position: relative;}
-     .mobile-nav.responsive a.icon {
-       position: absolute;
-       right: 0;
-       top: 0;
-     }
-     .mobile-nav.responsive a {
-       float: none;
-       display: block;
-       text-align: left;
-     }
-   }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+    .mobile-nav.responsive {
+        position: relative;
+    }
+    .mobile-nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mobile-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

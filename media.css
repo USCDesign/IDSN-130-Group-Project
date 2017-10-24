@@ -1,178 +1,170 @@
 #historycontentmobile {
-	display: none;
-	background-color: #FFFFFA;
+    display: none;
+    background-color: #FFFFFA;
 }
 
 @media screen and (max-width: 1100px) {
-
-	#homepage-body {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	.majorheader {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	.bottomheader, .minorheader {
-		width: 90%;
-		margin-left: 5%;
-		margin-top: 5%;
-	}
-
-	#usc-homepage, #ucla-homepage {
-		width: 80%;
-		margin-left: 7.5%;
-		margin-right: 7.5%;
-		margin-bottom: 20px;
-	}
-
-	#timeline {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	.overviewcontent, .mascotdiv, .ranking, .locationDiv, .statuesDiv, .championshipDiv, .studentsDiv {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	.centered, .enrollment, .mascot, .rank, .location, .students, .champion, .statue {
-		font-size: 28px;
-		letter-spacing: 4px;
-		line-height: 28px;
-	}
-
+    #homepage-body {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .majorheader {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bottomheader,
+    .minorheader {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #usc-homepage,
+    #ucla-homepage {
+        width: 80%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-bottom: 20px;
+    }
+    #timeline {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .overviewcontent,
+    .mascotdiv,
+    .ranking,
+    .locationDiv,
+    .statuesDiv,
+    .championshipDiv,
+    .studentsDiv {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .centered,
+    .enrollment,
+    .mascot,
+    .rank,
+    .location,
+    .students,
+    .champion,
+    .statue {
+        font-size: 28px;
+        letter-spacing: 4px;
+        line-height: 28px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-
-	/*
+    /*
 	audio {
 		display: none;
 	}
 	*/
-
-	#historycontentmobile {
-		display: block;
-	}
-
-	#historylinedownmiddle {
-		display: none;
-	}
-
-	#historycontent {
-		display: none;
-	}
-
-	#three:before {
-		height: calc(100%  + 4em);
-	}
-
-	.minorheader {
-		margin-bottom: 3em;
-	}
-
-	.bottomheader, .minorheader {
-		width: 90%;
-		margin-left: 5%;
-		margin-top: 5%;
-	}
-
-	#mobilebottomheader {
-		height: 0;
-	}
-
-	#linedownmiddle:before {
-		height: calc(100% - 10em);
-	}
-	#victory-button {
-		margin-top: 4px;
-	}
+    #historycontentmobile {
+        display: block;
+    }
+    #historylinedownmiddle {
+        display: none;
+    }
+    #historycontent {
+        display: none;
+    }
+    #three:before {
+        height: calc(100% + 4em);
+    }
+    .minorheader {
+        margin-bottom: 3em;
+    }
+    .bottomheader,
+    .minorheader {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #mobilebottomheader {
+        height: 0;
+    }
+    #linedownmiddle:before {
+        height: calc(100% - 10em);
+    }
+    #victory-button {
+        margin-top: 4px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-
-	h1 {
-		font-size: 40px;
-		line-height: 40px;
-		letter-spacing: 6px;
-	}
-
-	h2 {
-		font-size: 24px;
-		line-height: 24px;
-		letter-spacing: 4px;
-	}
-
-	.whitehorizontalbar {
-		width: calc(100vw - 25px);
-	}
-
-	.timeline {
-		width: 100%;
-		display: block;
-		text-align: center;
-	}
-
-	#historycontentmobile .timeline {
-		width: 80%;
-	}
-
-
-	#historycontentmobile .timelineaudio {
-		width: 100%;
-		margin-right: 0;
-	}
-
-	.historyright {
-		background-color: #FFFFFA;
-		border-left: 2px solid #dfdfdf;
-		border-right: 2px solid #dfdfdf;
-		border-top: 2px solid #dfdfdf;
-		margin-top: 2em;
-		text-align: center;
-	}
-
-	.historyleft {
-		background-color: #FFFFFA;
-		border-left: 2px solid #dfdfdf;
-		border-right: 2px solid #dfdfdf;
-		border-bottom: 2px solid #dfdfdf;
-		margin-bottom: 2em;
-		text-align: center;
-	}
-
-	#historyimageleft {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 2em;
-	}
-
-	#historyimageright {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 2em;
-	}
-
-	.centered, .enrollment, .mascot, .rank, .location, .students, .champion, .statue {
-		font-size: 18px;
-		letter-spacing: 2px;
-		line-height: 18px;
-	}
-
-	#victory-button {
-		margin-top: 4px;
-	}
-
-	#crosstown-button {
-		margin-top: 4px;
-	}
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 6px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 4px;
+    }
+    .whitehorizontalbar {
+        width: calc(100vw - 25px);
+    }
+    .timeline {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    #historycontentmobile .timeline {
+        width: 80%;
+    }
+    #historycontentmobile .timelineaudio {
+        width: 100%;
+        margin-right: 0;
+    }
+    .historyright {
+        background-color: #FFFFFA;
+        border-left: 2px solid #dfdfdf;
+        border-right: 2px solid #dfdfdf;
+        border-top: 2px solid #dfdfdf;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .historyleft {
+        background-color: #FFFFFA;
+        border-left: 2px solid #dfdfdf;
+        border-right: 2px solid #dfdfdf;
+        border-bottom: 2px solid #dfdfdf;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    #historyimageleft {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2em;
+    }
+    #historyimageright {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+    .centered,
+    .enrollment,
+    .mascot,
+    .rank,
+    .location,
+    .students,
+    .champion,
+    .statue {
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 18px;
+    }
+    #victory-button {
+        margin-top: 4px;
+    }
+    #crosstown-button {
+        margin-top: 4px;
+    }
 }

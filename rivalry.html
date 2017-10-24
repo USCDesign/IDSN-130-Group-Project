@@ -1,409 +1,469 @@
 <html>
-  <head>
-      <title>The Crosstown Rivalry</title>
-      <link rel="stylesheet" href="main.css">
-      <link rel="stylesheet" href="nav.css">
-	  <link rel="stylesheet" href="media.css">
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-      <!-- Custom Scripts For Class -->
-      <script type="text/javascript" src="school-picker.js"></script>
-      <script type="text/javascript" src="nav.js"></script>
-      <script type="text/javascript" src="rivalry.js"></script>
-      <script type="text/javascript" src="rivalry-nav.js"></script>
-      <script type="text/javascript" src="smooth-scroll.js"></script>
+<head>
+    <title>The Crosstown Rivalry</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-  </head>
+    <!-- Custom Scripts For Class -->
+    <script type="text/javascript" src="school-picker.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="rivalry.js"></script>
+    <script type="text/javascript" src="rivalry-nav.js"></script>
+    <script type="text/javascript" src="smooth-scroll.js"></script>
 
-   <body>
-      <header id="rivalryheader">
-         <div id="hometext">
+</head>
+
+<body>
+    <header id="rivalryheader">
+        <div id="hometext">
             <p class="whitehorizontalbar"></p>
             <h1 class="whitetext">USC vs. UCLA</h1>
             <h2 class="whitetext">The Rivalry</h2>
             <p class="whitehorizontalbar"></p>
-         </div>
-         <a href="#two" class="scrollarrow">
-           <h2 class="whitetext">
+        </div>
+        <a href="#two" class="scrollarrow">
+            <h2 class="whitetext">
              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
            </h2>
-         </a>
-      </header>
+        </a>
+    </header>
 
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="overview.html">Overview</a>
+            </li>
+            <li>
+                <a href="history.html">History</a>
+            </li>
+            <li>
+                <a href="rivalry.html">Rivalry</a>
+                <ul class="fallback">
+                    <li><a href="rivalry.html#timeline-page" id="timeline-page-button">Timeline</a></li>
+                    <li><a href="rivalry.html#crosstown-page" id="crosstown-page-button">Crosstown Cup</a></li>
+                    <li><a href="rivalry.html#victory-page" id="victory-page-button">Victory Bell</a></li>
+                </ul>
+            </li>
+            <li class="icon">
+                <a>&#9776;</a>
+            </li>
+        </ul>
+    </nav>
 
-      <nav>
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="overview.html">Overview</a>
-					</li>
-					<li>
-						<a href="history.html">History</a>
-					</li>
-					<li>
-						<a href="rivalry.html">Rivalry</a>
-						<ul class="fallback">
-							<li><a href="rivalry.html#timeline-page" id="timeline-page-button">Timeline</a></li>
-							<li><a href="rivalry.html#crosstown-page" id="crosstown-page-button">Crosstown Cup</a></li>
-							<li><a href="rivalry.html#victory-page" id="victory-page-button">Victory Bell</a></li>
-						</ul>
-					</li>
-          <li class="icon">
-            <a >&#9776;</a>
-          </li>
-				</ul>
-			</nav>
-
-      <section id="two">
+    <section id="two">
 
         <div class="majorheader" style="margin-bottom: 0; margin-top: 2em;">
-           <!-- <h4>Want to learn more about the sports rivalry?</h4> -->
-           <!-- <br> -->
-           <button id="timeline-button">Timeline</button>
-           <button id="crosstown-button">The Crosstown Cup</button>
-           <button id="victory-button">The Victory Bell</button>
+            <!-- <h4>Want to learn more about the sports rivalry?</h4> -->
+            <!-- <br> -->
+            <button id="timeline-button">Timeline</button>
+            <button id="crosstown-button">The Crosstown Cup</button>
+            <button id="victory-button">The Victory Bell</button>
         </div>
 
-
-
-		<!-- VICTORY BELL -->
+        <!-- VICTORY BELL -->
         <div id="victory-section" style="display:none;">
-			<div id="linedownmiddle">
-          <div id="homepage-body" >
-             <br>
-             <div class="majorheader">
-                <h1>The Victory Bell</h1>
-             </div>
-			 <div class="majorheader">
-				 <h4>current holder</h4>
-				 <h1 style="color:#990000;">USC</h1>
-				 <h6 style="line-height:15px; margin-top: -5px;">since 2015  </h6>
-				 <br>
-				 <img src="images/uscvictorybell.jpg" alt="USC Victory Bell" class="ccimages">
-             </div>
-			  <div class="majorheader">
-                <h4>next game</h4>
-				<h3 style="margin-top: 7px;">November 18, 2017 @ The Rose Bowl</h3>
-             </div>
-			 <div class="majorheader">
-                	<h1>the history</h1>
-					<br>
-					<p>The bell was given to the UCLA student body in 1939 as a gift from the school's alumni association. Initially, the UCLA cheerleaders rang the bell after each Bruin point. However, during the opening game of UCLA's 1941 season (at the time, both schools used the Los Angeles Memorial Coliseum for home games), six members of USC's Trojan Knights (who were also members of the SigEp fraternity) infiltrated the Bruin rooting section, assisted in loading the bell aboard a truck headed back to Westwood, took the key to the truck, and escaped with the bell while UCLA's actual handlers went to find a replacement key. The bell remained hidden from UCLA students for more than a year, first in SigEp&apos;s basement, then in the Hollywood Hills, Santa Ana, and other locations. At one point, it was even concealed beneath a haystack. Bruin students tried to locate the bell, but to no avail. A picture of the bell appeared in a USC periodical. Tension between UCLA and USC students rose as each started to play even more elaborate and disruptive pranks on the other. When the conflict caused the USC president to threaten to cancel the rivalry, a compromise was met: on November 12, 1942, the student body presidents of both schools, in front of Tommy Trojan, signed the agreement that the bell would be the trophy for the game.
-						<br><br>The winner of the annual football game keeps the Victory Bell for the next year, and paints it the school's color: "True Blue" for UCLA, or cardinal for USC.</p>
-            	</div>
-			  	<div class="majorheader">
-                	<h1>team traditions</h1>
-					<br>
-					<h3 style="color:#990000;">USC</h3>
-								<p>Before home games, when the bell is in USC's possession, it sits along Trousdale Parkway for fans to ring as they participate in the "Trojan Walk" to the L.A. Coliseum. During home games, and whenever USC faces UCLA at the Rose Bowl, the Victory Bell is displayed at the edge of the field for the first three quarters of the game. Members of the Trojan Knights ring the bell every time the Trojans score. The carriage is painted cardinal red.</p>
-					<br>
-					<h3 style="color:#3284bf;">UCLA</h3>
-								<p>When the bell is in UCLA's possession, the carriage is sandblasted and painted "True Blue". While in the possession of UCLA, the bell is safeguarded by the UCLA Rally Committee. During UCLA home games at the Rose Bowl and whenever UCLA faces USC at the Los Angeles Coliseum, it resides on the field in front of the student section. It is rung by members of the Rally Committee after each score. The Bruins also ring the bell using a rope attached to the handle, swinging the whole bell, as opposed to the Trojan style of attaching a rope to the tongue or clapper on the inside of the bell. The bell also makes special appearances at rallies and athletic events. It has been used to accompany the UCLA Band during halftime shows. In particular the bell will make an appearance at a major gathering if the bell returns to UCLA.</p>
-             	</div>
-			  <div class="majorheader">
-                	<h1>series record</h1>
-				  	<br>
-				  		<div id="seriesrecord-usc"></div>
-						<div id="seriesrecord-ucla"></div>
-						<div id="seriesrecord-tie"></div>
-					<br><br>
-				  	<h3><span style="color:#990000;">46</span> &#8209; <span style="color:#3284bf;">31</span> &#8209; 7</h3>
-				  <br>
-					<p>The first victory for UCLA in the series occurred after the agreement over the Victory Bell, making the Bruins the first winner of the trophy. The Bruins made their post-season appearance in the 1943 Rose Bowl. The teams played each other twice in the same season in 1943, 1944, and 1945. This was due to travel restrictions during World War II.<br><br>USC currently holds the bell following the 40&apos;21 victory on November 28, 2015. Previously, UCLA took the bell back following the 38&#8209;28 victory over USC on November 17, 2012. The Victory Bell was held by USC during the 1999&#8209;2005 and 2007&#8209;2011 football seasons. USC leads with an overall record of 48&#8209;31&#8209;7 in football contests with UCLA (including 2 wins vacated due to NCAA penalty). Before the streak of seven Trojan wins, the Bruins had won the bell for the eight consecutive years from 1991&#8209;1998, the longest streak in the rivalry. There have been 7 ties and one overtime game (1996, 2OT) in the history of the series. In the event of a tie, the Victory Bell was retained by the last winner. Since the institution of the overtime rule in college football, the tie rule became obsolete.</p>
-            	</div>
-           </div>
-				</div>
+            <div id="linedownmiddle">
+                <div id="homepage-body">
+                    <br>
+                    <div class="majorheader">
+                        <h1>The Victory Bell</h1>
+                    </div>
+                    <div class="majorheader">
+                        <h4>current holder</h4>
+                        <h1 style="color:#990000;">USC</h1>
+                        <h6 style="line-height:15px; margin-top: -5px;">since 2015  </h6>
+                        <br>
+                        <img src="images/uscvictorybell.jpg" alt="USC Victory Bell" class="ccimages">
+                    </div>
+                    <div class="majorheader">
+                        <h4>next game</h4>
+                        <h3 style="margin-top: 7px;">November 18, 2017 @ The Rose Bowl</h3>
+                    </div>
+                    <div class="majorheader">
+                        <h1>the history</h1>
+                        <br>
+                        <p>The bell was given to the UCLA student body in 1939 as a gift from the school's alumni association. Initially, the UCLA cheerleaders rang the bell after each Bruin point. However, during the opening game of UCLA's 1941 season (at the time, both schools used the Los Angeles Memorial Coliseum for home games), six members of USC's Trojan Knights (who were also members of the SigEp fraternity) infiltrated the Bruin rooting section, assisted in loading the bell aboard a truck headed back to Westwood, took the key to the truck, and escaped with the bell while UCLA's actual handlers went to find a replacement key. The bell remained hidden from UCLA students for more than a year, first in SigEp&apos;s basement, then in the Hollywood Hills, Santa Ana, and other locations. At one point, it was even concealed beneath a haystack. Bruin students tried to locate the bell, but to no avail. A picture of the bell appeared in a USC periodical. Tension between UCLA and USC students rose as each started to play even more elaborate and disruptive pranks on the other. When the conflict caused the USC president to threaten to cancel the rivalry, a compromise was met: on November 12, 1942, the student body presidents of both schools, in front of Tommy Trojan, signed the agreement that the bell would be the trophy for the game.
+                            <br>
+                            <br>The winner of the annual football game keeps the Victory Bell for the next year, and paints it the school's color: "True Blue" for UCLA, or cardinal for USC.</p>
+                    </div>
+                    <div class="majorheader">
+                        <h1>team traditions</h1>
+                        <br>
+                        <h3 style="color:#990000;">USC</h3>
+                        <p>Before home games, when the bell is in USC's possession, it sits along Trousdale Parkway for fans to ring as they participate in the "Trojan Walk" to the L.A. Coliseum. During home games, and whenever USC faces UCLA at the Rose Bowl, the Victory Bell is displayed at the edge of the field for the first three quarters of the game. Members of the Trojan Knights ring the bell every time the Trojans score. The carriage is painted cardinal red.</p>
+                        <br>
+                        <h3 style="color:#3284bf;">UCLA</h3>
+                        <p>When the bell is in UCLA's possession, the carriage is sandblasted and painted "True Blue". While in the possession of UCLA, the bell is safeguarded by the UCLA Rally Committee. During UCLA home games at the Rose Bowl and whenever UCLA faces USC at the Los Angeles Coliseum, it resides on the field in front of the student section. It is rung by members of the Rally Committee after each score. The Bruins also ring the bell using a rope attached to the handle, swinging the whole bell, as opposed to the Trojan style of attaching a rope to the tongue or clapper on the inside of the bell. The bell also makes special appearances at rallies and athletic events. It has been used to accompany the UCLA Band during halftime shows. In particular the bell will make an appearance at a major gathering if the bell returns to UCLA.</p>
+                    </div>
+                    <div class="majorheader">
+                        <h1>series record</h1>
+                        <br>
+                        <div id="seriesrecord-usc"></div>
+                        <div id="seriesrecord-ucla"></div>
+                        <div id="seriesrecord-tie"></div>
+                        <br>
+                        <br>
+                        <h3><span style="color:#990000;">46</span> &#8209; <span style="color:#3284bf;">31</span> &#8209; 7</h3>
+                        <br>
+                        <p>The first victory for UCLA in the series occurred after the agreement over the Victory Bell, making the Bruins the first winner of the trophy. The Bruins made their post-season appearance in the 1943 Rose Bowl. The teams played each other twice in the same season in 1943, 1944, and 1945. This was due to travel restrictions during World War II.
+                            <br>
+                            <br>USC currently holds the bell following the 40&apos;21 victory on November 28, 2015. Previously, UCLA took the bell back following the 38&#8209;28 victory over USC on November 17, 2012. The Victory Bell was held by USC during the 1999&#8209;2005 and 2007&#8209;2011 football seasons. USC leads with an overall record of 48&#8209;31&#8209;7 in football contests with UCLA (including 2 wins vacated due to NCAA penalty). Before the streak of seven Trojan wins, the Bruins had won the bell for the eight consecutive years from 1991&#8209;1998, the longest streak in the rivalry. There have been 7 ties and one overtime game (1996, 2OT) in the history of the series. In the event of a tie, the Victory Bell was retained by the last winner. Since the institution of the overtime rule in college football, the tie rule became obsolete.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-
-		<!-- CROSSTOWN CUP -->
+        <!-- CROSSTOWN CUP -->
         <div id="crosstown-section" style="display:none;">
-			<div id="linedownmiddle">
-          <div id="homepage-body" >
-             <br>
-             <div class="majorheader">
-                <h1>The Crosstown Cup</h1>
-             </div>
-			  <div class="majorheader">
-				  <h1>the history</h1>
-					<br>
-				  <p>The SoCal BMW Crosstown Cup is a year-long all-sports college competition between the UCLA Bruins and the USC Trojans. While UCLA and USC have had a sports rivalry since the 1920s, the official yearly head-to-head all-sports competition began with the 2001-2002 season as the Lexus Gauntlet. After the 2008-2009 season, Lexus' sponsorship ended. For the next five seasons USC and UCLA continued to keep track of the scores and yearly winners. Without an official sponsor, the competition was referred to as the Crosstown Gauntlet from fall 2009 to spring 2014. Starting with the 2014-2015 season, the series was sponsored by The Southern California BMW Centers and renamed the SoCal BMW Crosstown Cup.</p>
-				  <br><br>
-				  <h4>The Lexus Gaunlet</h4>
-				  <br>
-				  <img src="images/Lexusgaunlet.jpg" alt="Lexus Gaunlet" class="ccimages">
-				  <br><br>
-				  <h4>The BMW Crosstown Cup</h4>
-				  <br>
-				  <img src="images/bmwcrosstowncup.jpg" alt="BMW Crosstown Cup" class="ccimages">
-			  </div>
-			  <div class="majorheader">
-				 <h4>current holder</h4>
-				 <h1 style="color:#3284bf;">UCLA</h1>
-				 <h6 style="line-height:15px; margin-top: -5px;">since 2017  </h6>
-				 <br>
-				 <img src="images/ucla-cc.png" alt="USC Victory Bell" class="uclaccimages">
-             </div>
-			  <div class="majorheader">
-                	<h1>series record</h1>
-				  	<br>
-				  		<div id="cc-usc"></div>
-						<div id="cc-ucla"></div>
-					<br><br>
-				  	<h3><span style="color:#990000;">10</span> &#8209; <span style="color:#3284bf;">6</span></h3>
-				  	<br><br>
-            	</div>
-			  	<div class="majorheader">
-                	<h1>winners by year</h1>
-				  	<br>
-					<table id="cctable">
-						<tr>
-							<th><h3>Year</h3></th>
-							<th><h3>Winner</h3></th>
-							<th><h3>Score</h3></th>
-						</tr>
-						<tr>
-							<th colspan="3" class="cctype"><h4>Lexus Gauntlet</h4></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2001&#45;2002</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">55&#45;55&#42;</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="uclatextcolor">2002&#45;2003</h5></th>
-							<th><h5 class="uclatextcolor">UCLA</h5></th>
-							<th><h5 class="uclatextcolor">55&#45;55&#42;&#42;</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2003&#45;2004</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">57.5&#45;52.5</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="uclatextcolor">2004&#45;2005</h5></th>
-							<th><h5 class="uclatextcolor">UCLA</h5></th>
-							<th><h5 class="uclatextcolor">67.5&#45;42.5&#94;</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2005&#45;2006</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">60&#45;50</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="uclatextcolor">2006&#45;2007</h5></th>
-							<th><h5 class="uclatextcolor">UCLA</h5></th>
-							<th><h5 class="uclatextcolor">72.5&#45;37.5</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2007&#45;2008</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">67.5&#45;42.5</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2008&#45;2009</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">65&#45;45</h5></th>
-						</tr>
-						<tr>
-							<th colspan="3" class="cctype"><h4>Crosstown Gauntlet</h4></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2009&#45;2010</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">65&#45;45</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2010&#45;2011</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">72.5&#45;37.5</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2011&#45;2012</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">62.5&#45;47.5</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="uclatextcolor">2012&#45;2013</h5></th>
-							<th><h5 class="uclatextcolor">UCLA</h5></th>
-							<th><h5 class="uclatextcolor">65&#45;50</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2013&#45;2014</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">60&#45;55</h5></th>
-						</tr>
-						<tr>
-							<th colspan="3" class="cctype"><h4>SoCal BMW Crosstown Cup</h4></th>
-						</tr>
-						<tr>
-							<th><h5 class="uclatextcolor">2014&#45;2015</h5></th>
-							<th><h5 class="uclatextcolor">UCLA</h5></th>
-							<th><h5 class="uclatextcolor">95&#45;85</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="usctextcolor">2015&#45;2016</h5></th>
-							<th><h5 class="usctextcolor">USC</h5></th>
-							<th><h5 class="usctextcolor">120&#45;70</h5></th>
-						</tr>
-						<tr>
-							<th><h5 class="uclatextcolor">2016&#45;2017</h5></th>
-							<th><h5 class="uclatextcolor">UCLA</h5></th>
-							<th><h5 class="uclatextcolor">105&#45;85</h5></th>
-						</tr>
-					</table>
-					<br>
-					<p>&#42; USC won with the first tiebreaker: regular season head&#45;to&#45;head wins &#40;16&#45;15&#41;.
-					<br>&#42;&#42;UCLA won with the second tiebreaker: post season head&#45;to&#45;head wins &#40;4&#45;0&#41;.
-					<br>&#94;UCLA clinched the Gauntlet prior to the conclusion of the athletic season, and the resulting trophy inscription showed the score 70&#45;40. Afterwards, USC won back 2.5 points with a victory over UCLA in the NCAA Women's Tennis Championship</p>
-            	</div>
-           </div>
+            <div id="linedownmiddle">
+                <div id="homepage-body">
+                    <br>
+                    <div class="majorheader">
+                        <h1>The Crosstown Cup</h1>
+                    </div>
+                    <div class="majorheader">
+                        <h1>the history</h1>
+                        <br>
+                        <p>The SoCal BMW Crosstown Cup is a year-long all-sports college competition between the UCLA Bruins and the USC Trojans. While UCLA and USC have had a sports rivalry since the 1920s, the official yearly head-to-head all-sports competition began with the 2001-2002 season as the Lexus Gauntlet. After the 2008-2009 season, Lexus' sponsorship ended. For the next five seasons USC and UCLA continued to keep track of the scores and yearly winners. Without an official sponsor, the competition was referred to as the Crosstown Gauntlet from fall 2009 to spring 2014. Starting with the 2014-2015 season, the series was sponsored by The Southern California BMW Centers and renamed the SoCal BMW Crosstown Cup.</p>
+                        <br>
+                        <br>
+                        <h4>The Lexus Gaunlet</h4>
+                        <br>
+                        <img src="images/Lexusgaunlet.jpg" alt="Lexus Gaunlet" class="ccimages">
+                        <br>
+                        <br>
+                        <h4>The BMW Crosstown Cup</h4>
+                        <br>
+                        <img src="images/bmwcrosstowncup.jpg" alt="BMW Crosstown Cup" class="ccimages">
+                    </div>
+                    <div class="majorheader">
+                        <h4>current holder</h4>
+                        <h1 style="color:#3284bf;">UCLA</h1>
+                        <h6 style="line-height:15px; margin-top: -5px;">since 2017  </h6>
+                        <br>
+                        <img src="images/ucla-cc.png" alt="USC Victory Bell" class="uclaccimages">
+                    </div>
+                    <div class="majorheader">
+                        <h1>series record</h1>
+                        <br>
+                        <div id="cc-usc"></div>
+                        <div id="cc-ucla"></div>
+                        <br>
+                        <br>
+                        <h3><span style="color:#990000;">10</span> &#8209; <span style="color:#3284bf;">6</span></h3>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="majorheader">
+                        <h1>winners by year</h1>
+                        <br>
+                        <table id="cctable">
+                            <tr>
+                                <th>
+                                    <h3>Year</h3></th>
+                                <th>
+                                    <h3>Winner</h3></th>
+                                <th>
+                                    <h3>Score</h3></th>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="cctype">
+                                    <h4>Lexus Gauntlet</h4></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2001&#45;2002</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">55&#45;55&#42;</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="uclatextcolor">2002&#45;2003</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">UCLA</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">55&#45;55&#42;&#42;</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2003&#45;2004</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">57.5&#45;52.5</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="uclatextcolor">2004&#45;2005</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">UCLA</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">67.5&#45;42.5&#94;</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2005&#45;2006</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">60&#45;50</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="uclatextcolor">2006&#45;2007</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">UCLA</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">72.5&#45;37.5</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2007&#45;2008</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">67.5&#45;42.5</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2008&#45;2009</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">65&#45;45</h5></th>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="cctype">
+                                    <h4>Crosstown Gauntlet</h4></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2009&#45;2010</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">65&#45;45</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2010&#45;2011</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">72.5&#45;37.5</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2011&#45;2012</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">62.5&#45;47.5</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="uclatextcolor">2012&#45;2013</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">UCLA</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">65&#45;50</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2013&#45;2014</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">60&#45;55</h5></th>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="cctype">
+                                    <h4>SoCal BMW Crosstown Cup</h4></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="uclatextcolor">2014&#45;2015</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">UCLA</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">95&#45;85</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="usctextcolor">2015&#45;2016</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">USC</h5></th>
+                                <th>
+                                    <h5 class="usctextcolor">120&#45;70</h5></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5 class="uclatextcolor">2016&#45;2017</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">UCLA</h5></th>
+                                <th>
+                                    <h5 class="uclatextcolor">105&#45;85</h5></th>
+                            </tr>
+                        </table>
+                        <br>
+                        <p>&#42; USC won with the first tiebreaker: regular season head&#45;to&#45;head wins &#40;16&#45;15&#41;.
+                            <br>&#42;&#42;UCLA won with the second tiebreaker: post season head&#45;to&#45;head wins &#40;4&#45;0&#41;.
+                            <br>&#94;UCLA clinched the Gauntlet prior to the conclusion of the athletic season, and the resulting trophy inscription showed the score 70&#45;40. Afterwards, USC won back 2.5 points with a victory over UCLA in the NCAA Women's Tennis Championship</p>
+                    </div>
+                </div>
+            </div>
         </div>
-		  </div>
 
-
-
-		<!-- TIMELINE -->
+        <!-- TIMELINE -->
         <div id="timeline-section">
-			<div id="linedownmiddle">
-         <div id="homepage-body" >
-            <br>
-            <div class="majorheader">
-               <h1>Rivalry Timeline</h1>
-            </div>
-            <div class="videoheader">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/WJxfK1uHzzU" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <div id="linedownmiddle">
+                <div id="homepage-body">
+                    <br>
+                    <div class="majorheader">
+                        <h1>Rivalry Timeline</h1>
+                    </div>
+                    <div class="videoheader">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WJxfK1uHzzU" frameborder="0" allowfullscreen></iframe>
+                    </div>
 
-            <div id="rivalrycontent">
-               <section id="timeline">
-                  <table>
-                     <tr>
-                        <td class="timeline" id="historyimageleft"><img src="images/1944.jpg" alt="1944 UCLA vs USC Game"></td>
-                        <td class="timeline">
-                           <div class="historyleft">
-                              <h3 id="textnumbers">1944</h3>
-                              <p>The game ended in a 13-13 tie after World War II forced the teams to schedule the game at the beginning of the season.</p>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="timeline">
-                           <div class="historyright">
-                              <h3 id="textnumbers">1952</h3>
-                              <p>With both teams undefeated, No. 3 UCLA fell to No. 4 USC 14-12.</p>
-                           </div>
-                        </td>
-                        <td class="timeline" id="historyimageright"><img src="images/1952.jpg" alt="1952 UCLA vs USC Game"></td>
-                     </tr>
-                     <tr>
-                        <td class="timeline" id="historyimageleft"><img src="images/1967.jpg" alt="1967 UCLA vs USC Game"></td>
-                        <td class="timeline">
-                           <div class="historyleft">
-                              <h3 id="textnumbers">1967</h3>
-                              <p>During what is known as the "Game of the Century", No. 2 USC took down No. 1 UCLA 21-20.</p>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="timeline">
-                           <div class="historyright">
-                              <h3 id="textnumbers">1975</h3>
-                              <p>UCLA needed a win to reach the Rose Bowl and got it, defeating USC 25-20.</p>
-                           </div>
-                        </td>
-                        <td class="timeline" id="historyimageright"><img src="images/1975.jpg" alt="1975 UCLA vs USC Game"></td>
-                     </tr>
-                     <tr>
-                        <td class="timeline" id="historyimageleft"><img src="images/1976.jpg" alt="1976 UCLA vs USC Game"></td>
-                        <td class="timeline">
-                           <div class="historyleft">
-                              <h3 id="textnumbers">1976</h3>
-                              <p>No. 2 UCLA faced No. 3 USC, knowing the winner would advance to the Rose Bowl. USC came out on top, winning 24-14.</p>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="timeline">
-                           <div class="historyright">
-                              <h3 id="textnumbers">1988</h3>
-                              <p>With the winner earning a trip to the Rose Bowl, No. 2 USC beat No. 4 UCLA 31-22.</p>
-                           </div>
-                        </td>
-                        <td class="timeline" id="historyimageright"><img src="images/1988.jpg" alt="1988 UCLA vs USC Game"></td>
-                     </tr>
-                     <tr>
-                        <td class="timeline" id="historyimageleft"><img src="images/2005.jpg" alt="2005 UCLA vs USC Game"></td>
-                        <td class="timeline">
-                           <div class="historyleft">
-                              <h3 id="textnumbers">2005</h3>
-                              <p>Ranked No. 1 in the nation, USC walloped UCLA 66-19 and earned a bid to the BCS National Championship Game against Texas.</p>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="timeline">
-                           <div class="historyright">
-                              <h3 id="textnumbers">2006</h3>
-                              <p>A win would have sent No. 2 USC to the BCA National Championship, but the Bruins shocked the Trojans with a 13-9 upset.</p>
-                           </div>
-                        </td>
-                        <td class="timeline" id="historyimageright"><img src="images/2006.jpg" alt="2006 UCLA vs USC Game"></td>
-                     </tr>
-                     <tr>
-                        <td class="timeline" id="historyimageleft"><img src="images/2011.jpg" alt="2011 UCLA vs USC Game"></td>
-                        <td class="timeline">
-                           <div class="historyleft">
-                              <h3 id="textnumbers">2011</h3>
-                              <p>USC shutout UCLA with a 50-0 win, but the Bruins still won the Pac-12 South due to the sanctions on the Trojans.</p>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="timeline">
-                           <div class="historyright">
-                              <h3 id="textnumbers">2012</h3>
-                              <p>Playing in the rain, UCLA pays back USC for its loss the year before, winning 38-28 and going on to win the Pac-12 South.</p>
-                           </div>
-                        </td>
-                        <td class="timeline"><img src="images/2012.jpg" alt="2012 UCLA vs USC Game"></td>
-                     </tr>
-                  </table>
-               </section>
-            </div>
-            <br><br><br><br><br>
-            <div class="majorheader">
-               <h3>the facts</h3>
-               <br>
-               <ul class="alt">
-                  <li>Both schools are NCAA Division I</li>
-                  <li>Separated by only 12 miles</li>
-                  <li>
-                     <h6>How does the rivalry stay so active?</h6>
-                     The <a href="https://www.trojanknights.org" target="_blank" class="hyperlink">Trojan Knights</a> (all men) and the <a href="https://www.trojanknights.org/helenes/" target="_blank" class="hyperlink">Helenes</a> (all women) at USC and the <a href="http://rallycomm.wixsite.com/index" target="_blank" class="hyperlink">Rally Committee</a> (coed) at UCLA are student organizations that keep the traditions and rivalry alive.
-                  </li>
-               </ul>
-            </div>
+                    <div id="rivalrycontent">
+                        <section id="timeline">
+                            <table>
+                                <tr>
+                                    <td class="timeline" id="historyimageleft"><img src="images/1944.jpg" alt="1944 UCLA vs USC Game"></td>
+                                    <td class="timeline">
+                                        <div class="historyleft">
+                                            <h3 id="textnumbers">1944</h3>
+                                            <p>The game ended in a 13-13 tie after World War II forced the teams to schedule the game at the beginning of the season.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline">
+                                        <div class="historyright">
+                                            <h3 id="textnumbers">1952</h3>
+                                            <p>With both teams undefeated, No. 3 UCLA fell to No. 4 USC 14-12.</p>
+                                        </div>
+                                    </td>
+                                    <td class="timeline" id="historyimageright"><img src="images/1952.jpg" alt="1952 UCLA vs USC Game"></td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline" id="historyimageleft"><img src="images/1967.jpg" alt="1967 UCLA vs USC Game"></td>
+                                    <td class="timeline">
+                                        <div class="historyleft">
+                                            <h3 id="textnumbers">1967</h3>
+                                            <p>During what is known as the "Game of the Century", No. 2 USC took down No. 1 UCLA 21-20.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline">
+                                        <div class="historyright">
+                                            <h3 id="textnumbers">1975</h3>
+                                            <p>UCLA needed a win to reach the Rose Bowl and got it, defeating USC 25-20.</p>
+                                        </div>
+                                    </td>
+                                    <td class="timeline" id="historyimageright"><img src="images/1975.jpg" alt="1975 UCLA vs USC Game"></td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline" id="historyimageleft"><img src="images/1976.jpg" alt="1976 UCLA vs USC Game"></td>
+                                    <td class="timeline">
+                                        <div class="historyleft">
+                                            <h3 id="textnumbers">1976</h3>
+                                            <p>No. 2 UCLA faced No. 3 USC, knowing the winner would advance to the Rose Bowl. USC came out on top, winning 24-14.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline">
+                                        <div class="historyright">
+                                            <h3 id="textnumbers">1988</h3>
+                                            <p>With the winner earning a trip to the Rose Bowl, No. 2 USC beat No. 4 UCLA 31-22.</p>
+                                        </div>
+                                    </td>
+                                    <td class="timeline" id="historyimageright"><img src="images/1988.jpg" alt="1988 UCLA vs USC Game"></td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline" id="historyimageleft"><img src="images/2005.jpg" alt="2005 UCLA vs USC Game"></td>
+                                    <td class="timeline">
+                                        <div class="historyleft">
+                                            <h3 id="textnumbers">2005</h3>
+                                            <p>Ranked No. 1 in the nation, USC walloped UCLA 66-19 and earned a bid to the BCS National Championship Game against Texas.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline">
+                                        <div class="historyright">
+                                            <h3 id="textnumbers">2006</h3>
+                                            <p>A win would have sent No. 2 USC to the BCA National Championship, but the Bruins shocked the Trojans with a 13-9 upset.</p>
+                                        </div>
+                                    </td>
+                                    <td class="timeline" id="historyimageright"><img src="images/2006.jpg" alt="2006 UCLA vs USC Game"></td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline" id="historyimageleft"><img src="images/2011.jpg" alt="2011 UCLA vs USC Game"></td>
+                                    <td class="timeline">
+                                        <div class="historyleft">
+                                            <h3 id="textnumbers">2011</h3>
+                                            <p>USC shutout UCLA with a 50-0 win, but the Bruins still won the Pac-12 South due to the sanctions on the Trojans.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="timeline">
+                                        <div class="historyright">
+                                            <h3 id="textnumbers">2012</h3>
+                                            <p>Playing in the rain, UCLA pays back USC for its loss the year before, winning 38-28 and going on to win the Pac-12 South.</p>
+                                        </div>
+                                    </td>
+                                    <td class="timeline"><img src="images/2012.jpg" alt="2012 UCLA vs USC Game"></td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="majorheader">
+                        <h3>the facts</h3>
+                        <br>
+                        <ul class="alt">
+                            <li>Both schools are NCAA Division I</li>
+                            <li>Separated by only 12 miles</li>
+                            <li>
+                                <h6>How does the rivalry stay so active?</h6> The <a href="https://www.trojanknights.org" target="_blank" class="hyperlink">Trojan Knights</a> (all men) and the <a href="https://www.trojanknights.org/helenes/" target="_blank" class="hyperlink">Helenes</a> (all women) at USC and the <a href="http://rallycomm.wixsite.com/index" target="_blank" class="hyperlink">Rally Committee</a> (coed) at UCLA are student organizations that keep the traditions and rivalry alive.
+                            </li>
+                        </ul>
+                    </div>
 
-         </div>
-       		</div>
-		</div>
-      </section>
-      <footer>
-         <div class="footertext">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footertext">
             <h5 class="lightgrey">
                <a href="https://design.usc.edu/" target="_blank" style="border-bottom:none;"><i class="fa fa-hand-peace-o fa-3x" aria-hidden="true"></i></a><br><br>
                Group 4
             </h5>
             <h6 class="lightgrey">addison, nicole & lara</h6>
-         </div>
-      </footer>
-   </body>
+        </div>
+    </footer>
+</body>
+
 </html>
