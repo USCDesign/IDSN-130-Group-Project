@@ -31,6 +31,8 @@ nav ul li:hover a{
   color: #333;
   }
 
+
+
 nav ul li a {
   display:block;
   padding:15px 25px;color:#444;
@@ -48,9 +50,16 @@ nav ul li ul {
   width:22%;
   background:#FFF;
   }
-nav ul li ul li {margin:0;padding:0;width:auto;background:#FFF;}
-nav ul li ul li a {display:block;padding:15px 10px;color:#444;width: 100%;text-decoration:none;}
-nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul li {margin:0;
+  padding:0;
+  width:100%;
+  /*background:#FFF;*/
+}
+nav ul li ul li a {display:block;padding:15px 0px;color:#444;width: 100%;text-decoration:none;}
+nav ul li ul li a:hover{
+  font-weight: 800;
+  background:transparent !important;
+}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
 
